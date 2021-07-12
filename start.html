@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <!--<link  rel="stylesheet" type="text/css" href="/CSS/start.css">-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+    /*background-image: url("images/che.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;*/
+    background-color: #ffc107;
+ 
+}
+
+.welcome{
+    background-color: #000000;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Merienda One', cursive;
+}
+legend{
+    
+    color:#ffc107;
+}
+.title{
+    color:rgb(250, 250, 250);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Merienda One', cursive;
+}
+fieldset{
+    position: relative;
+    top: 10%;
+    border-style: inset;
+    border-color:#ffc107;
+    border-width: 10px;
+    display:list-item;
+    background: #000000;
+    opacity: o,9;
+    color: #ffffff;
+}
+ul.a{
+    color:#ffffff;
+    opacity: 10;
+    font-size: 40px;
+    font-family: 'Merienda One', cursive;
+    margin-left: 300px;
+}
+#start{
+    position: fixed;
+    left: 40%;
+    text-align: center;
+    font-size: 45px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+    </style>
+</head>
+<body>
+    <fieldset class="container" >
+        <legend class="welcome"> WELCOME TO QUIZ</legend>
+        
+        <div>
+            <h1 class="title"> Rules & Regulations.</h1>
+        </div>
+        <div>
+            <ul class="a">
+                <li>You have 60 secconds to complete the quiz.</li>
+                <li>You have 10 questions.</li>
+                <li>You will get 2 marks for correct answwers.</li>
+                <li>1 mark will be deducted for each incorrect answer.</li>
+            </ul>
+            <div>
+                <button id="start" onclick="start()" >START</button>
+            </div>
+        </div>
+
+        
+
+
+    </fieldset >
+    <script >
+        function start(){
+            window.location="http://127.0.0.1:5500/Q1.html";
+            
+        }
+
+
+    </script>
+    
+
+    
+</body>
+</html>

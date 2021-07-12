@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>winner price</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .box{
+            position: relative;
+            
+        }
+        .congrats, .score, .voucher{
+            position:relative;
+            font-size: 4vw;
+            background: #ffc107;
+            -webkit-text-stroke: 0.3vw #000000;
+            text-transform: uppercase;
+            text-align:center;
+        }
+ 
+    </style>
+</head>
+<body>
+<div class="box">
+    <p class="congrats">CONGRADULATIONS!!!</p>
+    <p class="score">YOU GOT THE PERFEECT SCORE</p>
+    <p class="voucher" id="code"></p>
+</div>
+<script>
+    document.getElementById("code").innerHTML ="VOUCHER CODE: "+Math.floor(Math.random() * 100001)+"chqw";
+</script>
+</body>
+</html>

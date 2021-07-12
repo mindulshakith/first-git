@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--link rel="stylesheet" type="text/css" href="/CSS/profile.css">-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: linear-gradient(#f0c24f,black);
+    
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #060c21;
+    transition: 0.5s;
+}
+
+.box :hover{
+    
+    height: 400px;
+    
+}
+
+.box .imgBx{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box .imgBx img{
+    max-width: 100%;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx img{
+    opacity: 1;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #020202;
+    z-index: -1;
+
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #f0c24f;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+
+.box .content{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: 0.6;
+    transition: 2s;
+
+}
+
+.box:hover .content{
+    opacity: 0.5;
+   
+}
+
+.box .content h2{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+
+}
+.box .content h2 span{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    letter-spacing: 2px;
+
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="imgBx">
+            <img src="images/kakashi.jpg" alt="kakashi">
+        </div>
+        <div class="content">
+            <h2>kakashi Hatake<br><span>Copy Ninja </span></h2>
+        </div>
+
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="images/gaara.jpg" alt="gaara">
+        </div>
+        <div class="content">
+            <h2>Gaara of Sand<br><span>4th Kazikage</span></h2>
+        </div>
+        
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="images/rock.jpg" alt="rocklee">
+        </div>
+        <div class="content">
+            <h2>Rock Lee<br><span>Blue Beast of Konoha</span></h2>
+        </div>
+        
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="images/shika.jpg " alt="shikamaru">
+        </div>
+        <div class="content">
+            <h2>Shikamaru Nara<br><span>Konoha lead Strategist</span></h2>
+        </div>
+        
+    </div>
+</body>
+</html>
